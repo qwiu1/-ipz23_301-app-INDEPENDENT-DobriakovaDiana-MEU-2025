@@ -1,59 +1,188 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторна робота №1.1 — Добрякова Діана</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 3.1 — Добрякова Діана</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header">
 
+<header class="header">
     <div class="header-content">
-      <h1>Міжнародний Європейський Університет</h1>
-      <div class="header-space"></div>
-      <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
-      <h3>дисципліна <span>"Програмування інтернет-застосувань"</span></h3>
-      <p class="student-info">
-        <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
-        <strong>Група:</strong> ІПЗ-23-301
-      </p>
+        <h1>Міжнародний Європейський Університет</h1>
+        <div class="header-space"></div>
+        <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
+        <h3>Дисципліна: <span>"Програмування інтернет-застосувань"</span></h3>
+        <p class="student-info">
+            <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
+            <strong>Група:</strong> ІПЗ-23-301
+        </p>
     </div>
+</header>
 
-    <div class="header-photo">
-      <img src="../img/photo.jpg" alt="Фото студента">
-    </div>
-  </header>
+<nav class="lab">
+    <a href="./lab1.1.html" class="lab-btn">Лабораторна 1.1</a>
+    <a href="./lab1.2.html" class="lab-btn">Лабораторна 1.2</a>
+    <a href="./lab2.1.html" class="lab-btn">Лабораторна 2.1</a>
+    <a href="./lab2.2.html" class="lab-btn">Лабораторна 2.2</a>
+    <a href="./lab3.1.html" class="lab-btn active">Лабораторна 3.1</a>
+    <a href="./lab3.2.html" class="lab-btn">Лабораторна 3.2</a>
+</nav>
 
-  <!-- Навігація по лабораторних -->
-  <nav class="lab">
-    <a href="./lab1.1.html" class="lab-btn">Лабораторна робота №1.1</a>
-    <a href="./lab1.2.html" class="lab-btn">Лабораторна робота №1.2</a>
-    <a href="./lab2.1.html" class="lab-btn">Лабораторна робота №2.1</a>
-    <a href="./lab2.2.html" class="lab-btn">Лабораторна робота №2.2</a>
-    <a href="./lab3.1.html" class="lab-btn active">Лабораторна робота №3.1</a>
-    <a href="./lab3.2.html" class="lab-btn">Лабораторна робота №3.2</a>
-    
-  </nav>
+<main class="lab1-main">
 
-  <!-- Основний контент лабораторної -->
-  <main class="lab-content">
-    <div class="lab-box">
-      <h2>Лабораторна робота №3.1</h2>
-      <h3>ТЕМА: ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
-ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
-</h3>
+    <aside class="lab-menu">
+        <button class="lab-item active" data-target="topic">Тема та Мета</button>
+        <button class="lab-item" data-target="task1">Завдання №1</button>
+        <button class="lab-item" data-target="task2">Завдання №2</button>
+        <button class="lab-item" data-target="task3">Завдання №3</button>
+        <button class="lab-item" data-target="task4">Завдання №4</button>
+        <button class="lab-item" data-target="task5">Завдання №5</button>
+        <button class="lab-item" data-target="concl">Висновки</button>
+    </aside>
 
-<h3>МЕТА: придбати практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях.  Реалізація програм засовами мови JAVASCRIPT
-</h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій  власного WEB-застосунку</a></h3>
-<h3><a href=" https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на живу сторінку  власного WEB-Застосунку</a></h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій звітного HTML-документа</a></h3>
-<h3><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на  живу сторінку  звітного HTML-документа</a></h3>
+    <section class="lab-display">
 
-    </div>
-  </main>
+        <!-- TOPIC -->
+        <div id="topic" class="lab-section active">
+            <h2>Тема, мета та місце розташування сайту, звіту</h2>
+            <p><b>Тема:</b> ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОБАМИ МОВИ JAVASCRIPT</p>
+            <p><b>Мета:</b> Придбати практичні навички роботи з конструкціями мови JS, масивами та функціями у JS-сценаріях. Реалізація програм засобами мови JavaScript.</p>
+            <p><b>Місце розташування:</b>
+                <ol>
+                    <li><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" target="_blank">Репозиторій власного WEB-застосунку</a></li>
+                    <li><a href="https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" target="_blank">Жива сторінка WEB-застосунку</a></li>
+                    <li><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" target="_blank">Репозиторій звітного HTML-документа</a></li>
+                    <li><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" target="_blank">Жива сторінка звітного HTML-документа</a></li>
+                </ol>
+            </p>
+        </div>
+
+        <!-- TASK 1 -->
+        <div id="task1" class="lab-section">
+            <h2>Завдання №1</h2>
+            <pre class="codes">
+function makeTransaction(quantity, pricePerDroid) {
+  const totalPrice = quantity * pricePerDroid;
+  return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+}
+
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(10, 1000));
+            </pre>
+            <p><b>Результат виконання:</b></p>
+            <img src="images/res1.png" alt="Result 1">
+        </div>
+
+        <!-- TASK 2 -->
+        <div id="task2" class="lab-section">
+            <h2>Завдання №2</h2>
+            <pre class="codes">
+function checkForSpam(message) {
+  const lowerMessage = message.toLowerCase();
+  return lowerMessage.includes("spam") || lowerMessage.includes("sale");
+}
+
+console.log(checkForSpam("Latest technology news"));     
+console.log(checkForSpam("Get best SALE offers now!"));  
+console.log(checkForSpam("Beware of SPAM messages"));    
+console.log(checkForSpam("Trustworthy deal, no spam here"));
+console.log(checkForSpam("Just chatting with friends"));
+            </pre>
+            <p><b>Результат виконання:</b></p>
+            <img src="images/res2.png" alt="Result 2">
+        </div>
+
+        <!-- TASK 3 -->
+        <div id="task3" class="lab-section">
+            <h2>Завдання №3</h2>
+            <h3>1.</h3>
+            <pre class="codes">
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      filteredNumbers.push(numbers[i]);
+    }
+  }
+  return filteredNumbers;
+}
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([10, 15, 20, 25], 17));
+console.log(filterArray([5, 4, 3, 2, 1], 5));
+            </pre>
+            <p><b>Результат виконання:</b></p>
+            <img src="images/res3_1.png" alt="Result 3_1">
+
+            <h3>2.</h3>
+            <pre class="codes">
+function makeArray(firstArray, secondArray, maxLength) {
+  const newArray = firstArray.concat(secondArray);
+  if (newArray.length > maxLength) {
+    return newArray.slice(0, maxLength);
+  }
+  return newArray;
+}
+console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 10));
+            </pre>
+            <p><b>Результат виконання:</b></p>
+            <img src="images/res3_2.png" alt="Result 3_2">
+        </div>
+
+        <!-- TASK 4 -->
+        <div id="task4" class="lab-section">
+            <h2>Завдання №4</h2>
+            <pre class="codes">
+// Код для створення масиву, пошуку макс/мін значень, обміну та сортування
+// (тут вставляємо ваш повний JS код із завдання №4)
+            </pre>
+            <p><b>Результат виконання:</b></p>
+            <img src="images/res4.png" alt="Result 4">
+        </div>
+
+        <!-- TASK 5 -->
+        <div id="task5" class="lab-section">
+            <h2>Завдання №5</h2>
+            <pre class="codes">
+// Код валідаторів форми та перевірки полів
+// (тут вставляємо ваш повний JS код із завдання №5)
+            </pre>
+            <p><b>Результат виконання:</b></p>
+            <ol>
+                <li>Якщо дані введено правильно
+                    <p><img src="images/true.png" alt="Result 5_1"></p>
+                </li>
+                <li>Якщо дані введено неправильно
+                    <p><img src="images/false.png" alt="Result 5_2"></p>
+                </li>
+            </ol>
+        </div>
+
+        <!-- CONCLUSIONS -->
+        <div id="concl" class="lab-section">
+            <h2>Висновки</h2>
+            <p>У ході виконання роботи було створено HTML-форму реєстрації користувача з перевіркою правильності введення даних. Було реалізовано такі етапи:</p>
+            <ul>
+                <li>Створено структуру форми з обов’язковими полями: ім’я користувача, вік, дата народження, пароль та підтвердження пароля.</li>
+                <li>Реалізовано клієнтську валідацію засобами JavaScript:</li>
+                <ul>
+                    <li>перевірка введення цілого числа (для віку);</li>
+                    <li>перевірка дійсного числа (для зарплати);</li>
+                    <li>перевірка дати у форматі <strong>DD.MM.YYYY</strong>;</li>
+                    <li>перевірка співпадіння паролів;</li>
+                    <li>контроль заповнення обов’язкових полів, позначених символом <strong>(*)</strong>.</li>
+                </ul>
+                <li>Додано виведення повідомлень про помилки біля відповідних полів.</li>
+                <li>У разі успішного заповнення форми виводиться коротке зведення введених даних.</li>
+            </ul>
+            <p>Було розроблено функціональну форму з гнучкою перевіркою введення, що забезпечує коректність даних перед їх надсиланням на сервер. Отримані знання можна застосовувати для створення реальних веб-форм реєстрації, авторизації або зворотного зв’язку.</p>
+        </div>
+
+    </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>

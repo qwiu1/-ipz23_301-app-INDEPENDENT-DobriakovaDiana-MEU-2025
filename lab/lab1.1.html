@@ -1,57 +1,185 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторна робота №1.1 — Добрякова Діана</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 1.1 — Добрякова Діана</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header">
 
+<header class="header">
     <div class="header-content">
-      <h1>Міжнародний Європейський Університет</h1>
-      <div class="header-space"></div>
-      <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
-      <h3>дисципліна <span>"Програмування інтернет-застосувань"</span></h3>
-      <p class="student-info">
-        <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
-        <strong>Група:</strong> ІПЗ-23-301
-      </p>
+        <h1>Міжнародний Європейський Університет</h1>
+        <div class="header-space"></div>
+        <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
+        <h3>Дисципліна: <span>"Програмування інтернет-застосувань"</span></h3>
+        <p class="student-info">
+            <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
+            <strong>Група:</strong> ІПЗ-23-301
+        </p>
     </div>
 
     <div class="header-photo">
-      <img src="../img/photo.jpg" alt="Фото студента">
+        <img src="../img/photo.jpg" alt="Фото студента">
     </div>
-  </header>
+</header>
 
-  <!-- Навігація по лабораторних -->
-  <nav class="lab">
-    <a href="./lab1.1.html" class="lab-btn active">Лабораторна робота №1.1</a>
-    <a href="./lab1.2.html" class="lab-btn">Лабораторна робота №1.2</a>
-    <a href="./lab2.1.html" class="lab-btn">Лабораторна робота №2.1</a>
-    <a href="./lab2.2.html" class="lab-btn">Лабораторна робота №2.2</a>
-    <a href="./lab3.1.html" class="lab-btn">Лабораторна робота №3.1</a>
-    <a href="./lab3.2.html" class="lab-btn">Лабораторна робота №3.2</a>
-    
-  </nav>
+<nav class="lab">
+    <a href="./lab1.1.html" class="lab-btn active">Лабораторна 1.1</a>
+    <a href="./lab1.2.html" class="lab-btn">Лабораторна 1.2</a>
+    <a href="./lab2.1.html" class="lab-btn">Лабораторна 2.1</a>
+    <a href="./lab2.2.html" class="lab-btn">Лабораторна 2.2</a>
+    <a href="./lab3.1.html" class="lab-btn">Лабораторна 3.1</a>
+    <a href="./lab3.2.html" class="lab-btn">Лабораторна 3.2</a>
+</nav>
 
-  <!-- Основний контент лабораторної -->
-  <main class="lab-content">
-    <div class="lab-box">
-      <h2>Лабораторна робота №1.1</h2>
-      <h3>ТЕМА: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</h3>
+<main class="lab1-main">
 
-<h3>МЕТА: придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами. Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
-</h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій  власного WEB-застосунку</a></h3>
-<h3><a href=" https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на живу сторінку  власного WEB-Застосунку</a></h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій звітного HTML-документа</a></h3>
-<h3><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на  живу сторінку  звітного HTML-документа</a></h3>
+    <aside class="lab-menu">
+        <button class="lab-item active" data-target="section1">Тема та Мета</button>
+        <button class="lab-item" data-target="section2">Опис предметного середовища</button>
+        <button class="lab-item" data-target="section3">Структура документа</button>
+        <button class="lab-item" data-target="section4">HTML-код таблиць</button>
+        <button class="lab-item" data-target="section5">HTML-код форми</button>
+        <button class="lab-item" data-target="section6">HTML-код зображення</button>
+        <button class="lab-item" data-target="section7">Висновки</button>
+    </aside>
 
-    </div>
-  </main>
+    <section class="lab-display">
+
+        <!-- SECTION 1 -->
+        <div id="section1" class="lab-section active">
+            <h2>Тема, мета та місце розташування</h2>
+            <p><b>Тема:</b> Структура HTML-документа</p>
+            <p><b>Мета:</b> Навчитися працювати з елементами HTML: таблицями, формами, зображеннями, структурою документа.</p>
+            <p><b>Місце розташування:</b> 
+                <a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" 
+                   target="_blank">GitHub</a>
+            </p>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div id="section2" class="lab-section">
+            <h2>Опис предметного середовища</h2>
+            <p>Розробка вебзастосунку для онлайн-платформи <b>SweetLife</b>, що представляє інтернет-кондитерську з каталогом солодощів, тортів та десертів із можливістю перегляду деталей, фільтрації за категоріями, оформлення замовлень та додавання улюблених товарів у “Мої замовлення”. Мета проєкту — створити зручний вебсайт для замовлення солодощів онлайн, де користувачі можуть швидко знайти потрібний десерт, дізнатися склад, ціну, вагу та оформити покупку. Ціль — забезпечити комфортний онлайн-шопінг для клієнтів кондитерської, популяризувати бренд SweetLife і спростити процес замовлення солодких виробів. Сценарій використання сайту: Користувач заходить на сайт і бачить каталог продукції з фото, назвою, коротким описом та ціною. Він може скористатися пошуком або фільтрами, щоб знайти, наприклад, “торти на день народження”, “веганські десерти” чи “печиво без цукру”. Обравши товар, користувач переходить на детальну сторінку, де відображаються: склад продукту, вага, ціна, наявність, а також можливість додати товар у кошик або до списку “Мої замовлення”. Зареєстрований користувач має змогу: 1. оформлювати замовлення та переглядати історію покупок; 2. додавати улюблені товари у “Мої замовлення” для швидкого повторного замовлення; 3. залишати відгуки про товари. Адміністратор сайту може: 1. додавати нові товари та редагувати існуючі; 2. переглядати всі замовлення та керувати їх статусом; 3. керувати категоріями продукції (торти, тістечка, печиво, десерти тощо) та контролювати наявність на складі.</p>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div id="section3" class="lab-section">
+            <h2>Структура документа</h2>
+            <pre class="codes">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;SweetLife — Онлайн-кондитерська&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div id="section4" class="lab-section">
+            <h2>HTML-код таблиць</h2>
+
+            <h3>Результат</h3>
+            <table border="1">
+                <tr><th>Назва</th><th>Категорія</th></tr>
+                <tr><td>Полуничний торт, Шоколадний торт, Весільний торт</td><td>Торти</td></tr>
+                <tr><td>Шоколадна насолода, Карамелька, Полунична мрія</td><td>Пончики</td></tr>
+                <tr><td>Шоколадні капкейки, Фруктові капкейки, Лимонні капкейки, Набір капкейків</td><td>Капкейки</td></tr>
+                <tr><td>Сирний пиріг, М'ясний пиріг, Солодкий пиріг, Сливовий пиріг</td><td>Пироги</td></tr>
+            </table>
+
+            <h3>HTML-код</h3>
+            <pre class="codes">
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Назва&lt;/th&gt;&lt;th&gt;Категорія&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Полуничний торт, Шоколадний торт, Весільний торт&lt;/td&gt;&lt;td&gt;Торти&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Шоколадна насолода, Карамелька, Полунична мрія&lt;/td&gt;&lt;td&gt;Пончики&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Шоколадні капкейки, Фруктові капкейки, Лимонні капкейки, Набір капкейків&lt;/td&gt;&lt;td&gt;Капкейки&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Сирний пиріг, М'ясний пиріг, Солодкий пиріг, Сливовий пиріг&lt;/td&gt;&lt;td&gt;Пироги&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div id="section5" class="lab-section">
+            <h2>HTML-код форми</h2>
+
+            <h3>Результат</h3>
+            <form>
+                <label for="name">Ім’я:</label><br>
+                <input id="name" type="text" placeholder="Введіть ваше ім’я"><br>
+
+                <label for="email">Номер телефону:</label><br>
+                <input id="email" type="text"><br>
+
+                <label for="message">Коментар:</label><br>
+                <textarea id="message" placeholder="Ваш текст..."></textarea><br>
+
+                <button>Підтвердити замовлення</button>
+            </form>
+
+            <h3>HTML-код</h3>
+            <pre class="codes">
+&lt;form&gt;
+  &lt;label for="name"&gt;Ім’я:&lt;/label&gt;&lt;br&gt;
+  &lt;input id="name" type="text" placeholder="Введіть ваше ім’я"&gt;&lt;br&gt;
+
+  &lt;label for="email"&gt;Номер телефону:&lt;/label&gt;&lt;br&gt;
+  &lt;input id="email" type="text"&gt;&lt;br&gt;
+
+  &lt;label for="message"&gt;Коментар:&lt;/label&gt;&lt;br&gt;
+  &lt;textarea id="message" placeholder="Ваш текст..."&gt;&lt;/textarea&gt;&lt;br&gt;
+
+  &lt;button&gt;Підтвердити замовлення&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- SECTION 6 -->
+        <div id="section6" class="lab-section">
+            <h2>HTML-код зображення</h2>
+            <p>Приклад додавання зображення страви:</p>
+
+            <h3>Результат</h3>
+            <img src="../img/pirog.png" width="200" alt="Приклад додавання зображення страви:">
+
+            <h3>HTML-код</h3>
+            <pre class="codes">
+&lt;img src="../img/pirog" width="200" alt="Приклад додавання зображення страви:"&gt;
+            </pre>
+        </div>
+
+        <!-- SECTION 7 -->
+        <div id="section7" class="lab-section">
+            <h2>Висновки</h2>
+            <p>Під час виконання лабораторної роботи було вивчено структуру HTML-документа , розглянула основні теги, створила таблицю, форму зворотного зв’язку та вставила зображення. Отримані знання є базовими для подальшого вивчення CSS і JavaScript.</p>
+        </div>
+
+    </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

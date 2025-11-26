@@ -1,56 +1,120 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторна робота №1.1 — Добрякова Діана</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 2.2 — Добрякова Діана</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header">
 
+<header class="header">
     <div class="header-content">
-      <h1>Міжнародний Європейський Університет</h1>
-      <div class="header-space"></div>
-      <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
-      <h3>дисципліна <span>"Програмування інтернет-застосувань"</span></h3>
-      <p class="student-info">
-        <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
-        <strong>Група:</strong> ІПЗ-23-301
-      </p>
+        <h1>Міжнародний Європейський Університет</h1>
+        <div class="header-space"></div>
+        <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
+        <h3>Дисципліна: <span>"Програмування інтернет-застосувань"</span></h3>
+        <p class="student-info">
+            <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
+            <strong>Група:</strong> ІПЗ-23-301
+        </p>
     </div>
+</header>
 
-    <div class="header-photo">
-      <img src="../img/photo.jpg" alt="Фото студента">
-    </div>
-  </header>
+<nav class="lab">
+    <a href="./lab1.1.html" class="lab-btn">Лабораторна 1.1</a>
+    <a href="./lab1.2.html" class="lab-btn">Лабораторна 1.2</a>
+    <a href="./lab2.1.html" class="lab-btn">Лабораторна 2.1</a>
+    <a href="./lab2.2.html" class="lab-btn active">Лабораторна 2.2</a>
+    <a href="./lab3.1.html" class="lab-btn">Лабораторна 3.1</a>
+    <a href="./lab3.2.html" class="lab-btn">Лабораторна 3.2</a>
+</nav>
 
-  <!-- Навігація по лабораторних -->
-  <nav class="lab">
-    <a href="./lab1.1.html" class="lab-btn">Лабораторна робота №1.1</a>
-    <a href="./lab1.2.html" class="lab-btn">Лабораторна робота №1.2</a>
-    <a href="./lab2.1.html" class="lab-btn">Лабораторна робота №2.1</a>
-    <a href="./lab2.2.html" class="lab-btn active">Лабораторна робота №2.2</a>
-    <a href="./lab3.1.html" class="lab-btn">Лабораторна робота №3.1</a>
-    <a href="./lab3.2.html" class="lab-btn">Лабораторна робота №3.2</a>
-    
-  </nav>
+<main class="lab1-main">
 
-  <!-- Основний контент лабораторної -->
-  <main class="lab-content">
-    <div class="lab-box">
-      <h2>Лабораторна робота №2.2</h2>
-      <h3>ТЕМА:  АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.</h3>
+    <aside class="lab-menu">
+        <button class="lab-item active" data-target="topic">Тема та Мета</button>
+        <button class="lab-item" data-target="adaptive">Адаптивна верстка</button>
+        <button class="lab-item" data-target="desktop">Десктопна версія</button>
+        <button class="lab-item" data-target="tablet">Планшетна версія</button>
+        <button class="lab-item" data-target="mobile">Мобільна версія</button>
+        <button class="lab-item" data-target="concl">Висновки</button>
+    </aside>
 
-      <h3>МЕТА: Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile First. </h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій  власного WEB-застосунку</a></h3>
-<h3><a href=" https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на живу сторінку  власного WEB-Застосунку</a></h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій звітного HTML-документа</a></h3>
-<h3><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на  живу сторінку  звітного HTML-документа</a></h3>
+    <section class="lab-display">
 
-    </div>
-  </main>
+        <!-- TOPIC -->
+        <div id="topic" class="lab-section active">
+            <h2>Тема, мета та місце розташування</h2>
+            <p><b>Тема:</b> АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ</p>
+            <p><b>Мета:</b> Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції. Метатег viewport. Інструменти розробника. Стратегія Mobile First.</p>
+            <p><b>Місце розташування:</b> <a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" target="_blank">GitHub</a></p>
+        </div>
+
+        <!-- ADAPTIVE -->
+        <div id="adaptive" class="lab-section">
+            <h2>Адаптивна верстка</h2>
+            <p>Використовуючи медіа-запити та CSS-правила, для обраних брейкпоінтів, виконати адаптивну верстку для:</p>
+            <ol>
+                <li>Десктопної версії</li>
+                <li>Планшетної версії</li>
+                <li>Мобільної версії</li>
+            </ol>
+        </div>
+
+        <!-- DESKTOP -->
+        <div id="desktop" class="lab-section">
+            <h2>Десктопна версія</h2>
+            <pre class="codes">
+@media screen and (min-width: 1024px) {
+  .partner-block {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+            </pre>
+            <p><b>Пояснення:</b> Для екранів від 1024 пікселів і більше встановлено класичне горизонтальне розташування елементів.</p>
+        </div>
+
+        <!-- TABLET -->
+        <div id="tablet" class="lab-section">
+            <h2>Планшетна версія</h2>
+            <pre class="codes">
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .partner-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+            </pre>
+            <p><b>Пояснення:</b> Тут використано логічний оператор <code>and</code>, який задає одночасно дві умови.</p>
+        </div>
+
+        <!-- MOBILE -->
+        <div id="mobile" class="lab-section">
+            <h2>Мобільна версія</h2>
+            <pre class="codes">
+@media screen and (max-width: 639px) {
+  .partner-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+            </pre>
+            <p><b>Пояснення:</b> Для екранів до 639px встановлено спрощене вертикальне розміщення елементів. Всі елементи займають 100% ширини екрану.</p>
+        </div>
+
+        <!-- CONCLUSIONS -->
+        <div id="concl" class="lab-section">
+            <h2>Висновки</h2>
+            <p>У результаті виконання лабораторної роботи було розроблено адаптивну верстку, яка коректно відображається на різних пристроях: десктопах, планшетах і мобільних телефонах. Використання медіа-запитів та логічних операторів у CSS дозволяє забезпечити зручне та привабливе відображення сторінки незалежно від розміру екрана.</p>
+        </div>
+
+    </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>

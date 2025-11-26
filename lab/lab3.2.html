@@ -1,59 +1,174 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторна робота №1.1 — Добрякова Діана</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 3.2 — Добрякова Діана</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header">
 
+<header class="header">
     <div class="header-content">
-      <h1>Міжнародний Європейський Університет</h1>
-      <div class="header-space"></div>
-      <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
-      <h3>дисципліна <span>"Програмування інтернет-застосувань"</span></h3>
-      <p class="student-info">
-        <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
-        <strong>Група:</strong> ІПЗ-23-301
-      </p>
+        <h1>Міжнародний Європейський Університет</h1>
+        <div class="header-space"></div>
+        <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
+        <h3>Дисципліна: <span>"Програмування інтернет-застосувань"</span></h3>
+        <p class="student-info">
+            <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
+            <strong>Група:</strong> ІПЗ-23-301
+        </p>
     </div>
+</header>
 
-    <div class="header-photo">
-      <img src="../img/photo.jpg" alt="Фото студента">
-    </div>
-  </header>
+<nav class="lab">
+    <a href="./lab1.1.html" class="lab-btn">Лабораторна 1.1</a>
+    <a href="./lab1.2.html" class="lab-btn">Лабораторна 1.2</a>
+    <a href="./lab2.1.html" class="lab-btn">Лабораторна 2.1</a>
+    <a href="./lab2.2.html" class="lab-btn">Лабораторна 2.2</a>
+    <a href="./lab3.1.html" class="lab-btn">Лабораторна 3.1</a>
+    <a href="./lab3.2.html" class="lab-btn active">Лабораторна 3.2</a>
+</nav>
 
-  <!-- Навігація по лабораторних -->
-  <nav class="lab">
-    <a href="./lab1.1.html" class="lab-btn">Лабораторна робота №1.1</a>
-    <a href="./lab1.2.html" class="lab-btn">Лабораторна робота №1.2</a>
-    <a href="./lab2.1.html" class="lab-btn">Лабораторна робота №2.1</a>
-    <a href="./lab2.2.html" class="lab-btn">Лабораторна робота №2.2</a>
-    <a href="./lab3.1.html" class="lab-btn">Лабораторна робота №3.1</a>
-    <a href="./lab3.2.html" class="lab-btn active">Лабораторна робота №3.2</a>
-  
-  </nav>
+<main class="lab1-main">
 
-  <!-- Основний контент лабораторної -->
-  <main class="lab-content">
-    <div class="lab-box">
-      <h2>Лабораторна робота №3.2</h2>
-      <h3>ТЕМА: ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК КОЛБЕКИ.</h3>
+    <aside class="lab-menu">
+        <button class="lab-item active" data-target="topic">Тема та Мета</button>
+        <button class="lab-item" data-target="task1">Завдання №1</button>
+        <button class="lab-item" data-target="task2">Завдання №2</button>
+        <button class="lab-item" data-target="task3">Завдання №3</button>
+        <button class="lab-item" data-target="task4">Завдання №4</button>
+        <button class="lab-item" data-target="task5">Завдання №5</button>
+        <button class="lab-item" data-target="concl">Висновки</button>
+    </aside>
 
-<h3>МЕТА: придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як колбеки.
-  Реалізація програм засовами мови JAVASCRIPT
+    <section class="lab-display">
 
-</h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій  власного WEB-застосунку</a></h3>
-<h3><a href=" https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на живу сторінку  власного WEB-Застосунку</a></h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій звітного HTML-документа</a></h3>
-<h3><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на  живу сторінку  звітного HTML-документа</a></h3>
+        <!-- TOPIC -->
+        <div id="topic" class="lab-section active">
+            <h2>Тема, мета та місце розташування сайту, звіту</h2>
+            <p><b>Тема:</b> ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. ОНЛАЙН КОНДИТЕРСЬКА.</p>
+            <p><b>Мета:</b> Придбати практичні навички роботи з об'єктами, методами об'єкта, колбеками, стрілочними функціями та масивами об'єктів у JS-сценаріях на прикладі онлайн кондитерської.</p>
+            <p><b>Місце розташування:</b>
+                <ol>
+                    <li><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" target="_blank">Репозиторій власного WEB-застосунку</a></li>
+                    <li><a href="https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" target="_blank">Жива сторінка WEB-застосунку</a></li>
+                    <li><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" target="_blank">Репозиторій звітного HTML-документа</a></li>
+                    <li><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" target="_blank">Жива сторінка звітного HTML-документа</a></li>
+                </ol>
+            </p>
+        </div>
 
-    </div>
-  </main>
+        <!-- TASK 1 -->
+        <div id="task1" class="lab-section">
+            <h2>Завдання №1</h2>
+            <pre class="codes">
+function createProduct(obj, callback) {
+  const product = { id: Date.now(), ...obj };
+  callback(product);
+}
+
+function logProduct(product) {
+  console.log(product);
+}
+
+createProduct({ name: "Торт", price: 250, quantity: 2 }, logProduct);
+createProduct({ name: "Пиріг", price: 150, quantity: 3 }, logProduct);
+            </pre>
+        </div>
+
+        <!-- TASK 2 -->
+        <div id="task2" class="lab-section">
+            <h2>Завдання №2</h2>
+            <pre class="codes">
+const orders = [
+  { product: "Торт", quantity: 2, price: 250 },
+  { product: "Пиріг", quantity: 3, price: 150 },
+  { product: "Кекс", quantity: 5, price: 50 },
+];
+
+// Обчислюємо загальну суму замовлення
+const totalSum = orders.reduce((sum, order) => sum + order.price * order.quantity, 0);
+console.log(totalSum);
+            </pre>
+        </div>
+
+        <!-- TASK 3 -->
+        <div id="task3" class="lab-section">
+            <h2>Завдання №3</h2>
+            <pre class="codes">
+const products = [
+  { name: "Торт", price: 250, category: "Торти" },
+  { name: "Пиріг", price: 150, category: "Пироги" },
+  { name: "Кекс", price: 50, category: "Кекси" },
+];
+
+// Фільтруємо продукти за ціною > 100
+const expensive = products.filter(p => p.price > 100);
+console.log(expensive);
+            </pre>
+        </div>
+
+        <!-- TASK 4 -->
+        <div id="task4" class="lab-section">
+            <h2>Завдання №4</h2>
+            <pre class="codes">
+class Client {
+  #login;
+  #email;
+
+  constructor(login, email) {
+    this.#login = login;
+    this.#email = email;
+  }
+
+  get login() {
+    return this.#login;
+  }
+
+  set login(newLogin) {
+    this.#login = newLogin;
+  }
+
+  get email() {
+    return this.#email;
+  }
+
+  set email(newEmail) {
+    this.#email = newEmail;
+  }
+}
+
+const client1 = new Client("User1", "user1@gmail.com");
+console.log(client1.login);
+client1.login = "NewUser";
+console.log(client1.login);
+            </pre>
+        </div>
+
+        <!-- TASK 5 -->
+        <div id="task5" class="lab-section">
+            <h2>Завдання №5</h2>
+            <pre class="codes">
+const discountedProducts = products.map((p, i) => ({
+  id: i + 1,
+  name: p.name,
+  price: p.price * 0.9 // 10% знижка
+}));
+console.log(discountedProducts);
+            </pre>
+        </div>
+
+        <!-- CONCLUSIONS -->
+        <div id="concl" class="lab-section">
+            <h2>Висновки</h2>
+            <p>У ході виконання завдань я виконала роботу з об’єктами, масивами об’єктів, колбеками, класами та стрілочними функціями на прикладі онлайн кондитерської. Отримані знання можна застосовувати для реальних веб-застосунків з каталогами продуктів, кошиком замовлень та обробкою даних користувачів.</p>
+        </div>
+
+    </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>
+

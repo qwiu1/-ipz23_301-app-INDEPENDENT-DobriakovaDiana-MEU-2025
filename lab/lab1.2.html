@@ -1,56 +1,201 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторна робота №1.1 — Добрякова Діана</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 1.2 — Добрякова Діана</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header">
 
+<header class="header">
     <div class="header-content">
-      <h1>Міжнародний Європейський Університет</h1>
-      <div class="header-space"></div>
-      <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
-      <h3>дисципліна <span>"Програмування інтернет-застосувань"</span></h3>
-      <p class="student-info">
-        <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
-        <strong>Група:</strong> ІПЗ-23-301
-      </p>
+        <h1>Міжнародний Європейський Університет</h1>
+        <div class="header-space"></div>
+        <h2><a href="../index.html" class="lab-link">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</a></h2>
+        <h3>Дисципліна: <span>"Програмування інтернет-застосувань"</span></h3>
+        <p class="student-info">
+            <strong>Студентка:</strong> Добрякова Діана Олександрівна<br>
+            <strong>Група:</strong> ІПЗ-23-301
+        </p>
     </div>
 
     <div class="header-photo">
-      <img src="../img/photo.jpg" alt="Фото студента">
+        <img src="../img/photo.jpg" alt="Фото студента">
     </div>
-  </header>
+</header>
 
-  <!-- Навігація по лабораторних -->
-  <nav class="lab">
-    <a href="./lab1.1.html" class="lab-btn">Лабораторна робота №1.1</a>
-    <a href="./lab1.2.html" class="lab-btn active">Лабораторна робота №1.2</a>
-    <a href="./lab2.1.html" class="lab-btn">Лабораторна робота №2.1</a>
-    <a href="./lab2.2.html" class="lab-btn">Лабораторна робота №2.2</a>
-    <a href="./lab3.1.html" class="lab-btn">Лабораторна робота №3.1</a>
-    <a href="./lab3.2.html" class="lab-btn">Лабораторна робота №3.2</a>
-    
-  </nav>
+<nav class="lab">
+    <a href="./lab1.1.html" class="lab-btn">Лабораторна 1.1</a>
+    <a href="./lab1.2.html" class="lab-btn active">Лабораторна 1.2</a>
+    <a href="./lab2.1.html" class="lab-btn">Лабораторна 2.1</a>
+    <a href="./lab2.2.html" class="lab-btn">Лабораторна 2.2</a>
+    <a href="./lab3.1.html" class="lab-btn">Лабораторна 3.1</a>
+    <a href="./lab3.2.html" class="lab-btn">Лабораторна 3.2</a>
+</nav>
 
-  <!-- Основний контент лабораторної -->
-  <main class="lab-content">
-    <div class="lab-box">
-      <h2>Лабораторна робота №1.2</h2>
-      <h3>ТЕМА: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</h3>
+<main class="lab1-main">
 
-      <h3>МЕТА: придбати практичні навички роботи  з селекторами: тегів, класів, ідентифікаторів; списками,  різноманітними властивостями кольору і фону, оформленням текстових елементів</h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/ipz23_301-appWEB-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій  власного WEB-застосунку</a></h3>
-<h3><a href=" https://qwiu1.github.io/ipz23_301-appWEB-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на живу сторінку  власного WEB-Застосунку</a></h3>
-<p> </p>
-<h3><a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" class="lab-link2">Посилання на репозиторій звітного HTML-документа</a></h3>
-<h3><a href="https://qwiu1.github.io/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025/" class="lab-link2">Посилання на репозиторій на  живу сторінку  звітного HTML-документа</a></h3>
+    <aside class="lab-menu">
+        <button class="lab-item active" data-target="topic">Тема та Мета</button>
+        <button class="lab-item" data-target="tag-selectors">1. Селектори тегу</button>
+        <button class="lab-item" data-target="class-selectors">2. Селектори класу</button>
+        <button class="lab-item" data-target="id-selectors">3. Селектори ID</button>
+        <button class="lab-item" data-target="other-selectors">4. Інші селектори</button>
+        <button class="lab-item" data-target="css-examples">5. CSS приклади</button>
+        <button class="lab-item" data-target="concl">Висновки</button>
+        <button class="lab-item" data-target="questions">Контрольні питання</button>
+    </aside>
 
-    </div>
-  </main>
+    <section class="lab-display">
+
+        <!-- TOPIC -->
+        <div id="topic" class="lab-section active">
+            <h2>Тема та мета роботи</h2>
+            <p><b>Тема:</b> Каскадні таблиці стилів. Селектори. Ідентифікатори. Текстове оформлення.</p>
+            <p><b>Мета:</b> Навчитися працювати з селекторами тегів, класів, ID, списками, фоном, кольорами та стилями тексту.</p>
+            <p><b>Місце розташування:</b>
+                <a href="https://github.com/qwiu1/-ipz23_301-app-INDEPENDENT-DobriakovaDiana-MEU-2025.git" target="_blank">GitHub</a>
+            </p>
+        </div>
+
+        <!-- 1. TAG SELECTORS -->
+        <div id="tag-selectors" class="lab-section">
+            <h2>Селектори тегу</h2>
+            <p>Селектори тегів застосовуються до всіх елементів певного типу.</p>
+
+            <pre class="codes">
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0EADB;
+}
+            </pre>
+
+            <p>Цей абзац оформлено через селектор тегу <code>body</code>.</p>
+        </div>
+
+        <!-- 2. CLASS SELECTORS -->
+        <div id="class-selectors" class="lab-section">
+            <h2>Селектори класу</h2>
+            <p>Класи дозволяють створювати стилі для групи елементів.</p>
+
+            <pre class="codes">
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #3b2f22;
+    margin-left: auto;
+    user-select: none;
+}
+            </pre>
+
+            <p>Текст оформлений за допомогою класу <code>.burger</code>.</p>
+        </div>
+
+        <!-- 3. ID SELECTORS -->
+        <div id="id-selectors" class="lab-section">
+            <h2>Селектори ідентифікатора</h2>
+            <p>ID-селектор використовується для одного унікального елемента.</p>
+
+            <pre class="codes">
+#toggle-search {
+    display: none;
+}
+            </pre>
+
+            <p>Цей елемент стилізований за допомогою селектора <code>#toggle-search</code>.</p>
+        </div>
+
+        <!-- 4. OTHER SELECTORS -->
+        <div id="other-selectors" class="lab-section">
+            <h2>Інші селектори</h2>
+            <p>В CSS існують також дочірні, універсальні, сусідні та атрибутні селектори.</p>
+
+            <pre class="codes">
+.menu ul li ul li {
+    display: block;
+    text-align: left;
+    padding: 4px 20px;
+}
+            </pre>
+        </div>
+
+        <!-- 5. CSS EXAMPLES -->
+        <div id="css-examples" class="lab-section">
+            <h2>CSS: Шрифти, текст, фон, таблиці, списки</h2>
+
+            <p id="text_example"><b>Текст із шрифтом Poppins, кольором #AF1FCC та тінню.</b></p>
+
+            <h3>Приклад таблиці:</h3>
+            <table border="1" style="width:80%; border-collapse: collapse; text-align:center;">
+                <tr><th>Елемент</th><th>Властивість</th><th>Значення</th></tr>
+                <tr><td>Шрифт</td><td>font-family</td><td>Poppins</td></tr>
+                <tr><td>Колір</td><td>color</td><td>#AF1FCC</td></tr>
+                <tr><td>Фон</td><td>background-color</td><td>#e5e7de</td></tr>
+            </table>
+
+            <h3>Приклад списку:</h3>
+            <ul>
+                <li>Селектори тегів</li>
+                <li>Селектори класів</li>
+                <li>Селектори ідентифікаторів</li>
+            </ul>
+        </div>
+
+        <!-- 6. CONCLUSIONS -->
+        <div id="concl" class="lab-section">
+            <h2>Висновки</h2>
+            <p>У ході виконання лабораторної роботи я закріпила знання щодо CSS-селекторів, навчилась оформлювати текст, фон, таблиці та списки.</p>
+        </div>
+
+        <!-- 7. QUESTIONS -->
+        <div id="questions" class="lab-section">
+            <h2>Контрольні питання</h2>
+
+            <ol>
+                <li>Для чого використовуються CSS?</li>
+                <p>CSS задає зовнішній вигляд HTML-елементів.</p>
+
+                <li>Методи визначення стилів:</li>
+                <pre class="codes">
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;style&gt; h1 { color: red; } &lt;/style&gt;
+&lt;p style="color: green;"&gt;Текст&lt;/p&gt;
+                </pre>
+
+                <li>Каскадування vs спадкування</li>
+                <p><b>Каскадування:</b> вибір стилю з найвищим пріоритетом.<br>
+                   <b>Спадкування:</b> властивості передаються дочірнім елементам.</p>
+
+                <li>Приклади селекторів тегу і класу:</li>
+                <pre class="codes">
+p { color: blue; }
+.text { font-size: 20px; }
+                </pre>
+
+                <li>Для чого використовується ID?</li>
+                <p>Для унікального елемента, до якого звертаються в CSS або JS.</p>
+
+                <li>Приклади оформлення тексту</li>
+                <pre class="codes">
+p {
+    color: #333;
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+    text-decoration: underline;
+}
+                </pre>
+            </ol>
+        </div>
+
+    </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>
+
+
